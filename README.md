@@ -1,26 +1,10 @@
-# Positivus - Digital Marketing Agency Landing Page
+# K7SWI - South West Idaho Amatuer Radio Club Website
 
-Introducing "Positivus" - a stunning and versatile Astro theme designed for digital marketing agencies.
+This is the official website for the Southwest Idaho Amateur Radio Club (K7SWI).
+It provides information about club events, repeaters, nets, educational resources, and ways to get involved with amateur radio in the Southwest Idaho area.
 
-Built with clean, modern aesthetics and leveraging the power of Astro and Tailwind, Positivus empowers you to craft a captivating website that showcases your agency's expertise and fosters trust with potential clients.
-
-[![Static Badge](https://img.shields.io/badge/UI%2FUX-Olga-blue)](https://www.figma.com/@olgaaverchenko) [![View Demo](https://img.shields.io/badge/Develop-Manul_Thanura-red)](https://lk.linkedin.com/in/manulthanura)
-[![Static Badge](https://img.shields.io/badge/View_Demo-green)](https://positivustheme.vercel.app)
-[![Static Badge](https://img.shields.io/badge/Astro-orange)](https://astro.build/)
-
-![Cover](./public/cover.png)
-
-## Theme Features
-
-Leveraging the power of Astro and Tailwind CSS, Positivus offers:
-
-- Clean and modern design.
-- SEO-friendly.
-- Multiple Layouts.
-- Seamless Navigation.
-- Pre-built Sections.
-- Customizable Components.
-- Mobile-Responsiveness.
+The site highlights our monthly meetings, leadership gatherings, contest participation, Parks on the Air activities, and Field Day events.
+It serves as both a resource for current members and an invitation for anyone interested in learning more about ham radio to join us.
 
 ## 🚀 Project Structure
 

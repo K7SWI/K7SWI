@@ -29,10 +29,11 @@
   }
 
   :root {
-    --green: #b9ff66;
-    --black: rgb(0, 0, 0);
-    --dark: #191a23;
-    --gray: #f3f3f3;
+    --black: #1c110a;
+    --dark: #296b65;
+    --blue: #45b5aa; /*244459 3b5f71ff*/
+    --cyan: #b2e1dd;
+    --gray: #ede0cb;
     --white: #ffffff;
   }
 
@@ -104,7 +105,7 @@
       @apply bg-dark text-white rounded-lg px-[35px] py-5 transition-all duration-200;
     }
     .btn-primary:hover {
-      @apply bg-green text-black transform scale-105;
+      @apply bg-cyan text-black transform scale-105;
     }
 
     .btn-secondary {
@@ -115,14 +116,18 @@
     }
 
     .btn-tertiary {
-      @apply bg-green text-black rounded-lg px-[35px] py-5 transition-all duration-200;
+      @apply bg-cyan text-black rounded-lg px-[35px] py-5 transition-all duration-200;
     }
     .btn-tertiary:hover {
       @apply bg-white text-black transform scale-105;
     }
 
-    .greenhead {
-      @apply bg-green text-black rounded-[7px] px-[7px];
+    .cyanhead {
+      @apply bg-cyan text-black rounded-[7px] px-[7px];
+    }
+
+    .grayhead {
+      @apply bg-gray text-black rounded-[7px] px-[7px];
     }
 
     .whitehead {
@@ -153,6 +158,18 @@
 }
 
 /* markdown style */
+.content a {
+  @apply underline decoration-cyan text-blue hover:text-dark hover:decoration-gray visited:decoration-dark visited:text-dark
+}
+
+.content ul {
+  @apply list-disc list-inside mb-3
+}
+
+.content strong {
+  font-weight: bold;
+}
+
 .content p {
   margin: 20px 0;
   font-size: 1.1rem;
@@ -162,4 +179,12 @@
   margin: 20px 0;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+.content hr {
+  @apply mt-5
+}
+
+.content img {
+  @apply mx-auto
 }

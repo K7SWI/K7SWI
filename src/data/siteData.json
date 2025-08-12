@@ -1,8 +1,8 @@
 {
-  "title": "Positivus",
-  "description": "Positivus is a simple and minimalistic blog theme for Ghost. It is designed to be a perfect starting point for your blog project.",
+  "title": "South West Idaho Amateur Radio Club",
+  "description": "The South West Idaho Amateur Radio Club is an active ham radio community based in Nampa, Idaho. We host monthly events, educational meetups, POTA activations, Field Day operations, and support a wide range of amateur radio bands and technologies.",
   "image": {
-    "src": "https://github.com/manulthanura/Positivus/raw/main/public/cover.png",
-    "alt": "Positivus"
+    "src": "https://github.com/K7SWI/website/raw/main/public/cover.png",
+    "alt": "K7SWI"
   }
 }

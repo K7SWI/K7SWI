@@ -1,0 +1,168 @@
+---
+import AREDNHero from "@/components/sections/AREDNHero.astro";
+import Card from "@/components/ui/Card.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
+import Section from "@/components/sections/Section.astro";
+---
+
+<MainLayout title="Our Pricing">
+  <AREDNHero />
+  <main class="grid lg:grid-cols-3 mt-[123px]">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-3 col-span-2">
+      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+          Why AREDN?
+        </h2>
+        <p class="mb-5 font-light text-gray-500 sm:text-xl text-justify">
+          People often ask, <i>“Why use AREDN?”</i> or <i>“What’s it for?”</i> The
+          answer is simple: <br /> it enables reliable, off-grid digital communication
+          infrastructure.
+          <br />
+          <br />
+          We operate two fully solar-powered remote sites, each equipped with a dashboard
+          to monitor battery levels, charging status, and site loads. Cameras can
+          be deployed for still images, time-lapse sequences, or live video streaming.
+          Some repeaters are remotely controllable using serial-to-TCP converters.
+          <br /><br />
+          Beyond monitoring, AREDN supports a variety of services over TCP/IP—including
+          VoIP phones for easy voice communication, text chat systems, file servers,
+          and much more.
+        </p>
+      </div>
+      <div
+        class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0"
+      >
+      </div>
+    </div>
+    <div class="bg-cyan rounded-[45px] p-[60px] w-[80%] mx-auto">
+      <div class="mx-auto">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+          Treasure Valley Status
+        </h2>
+        <p class="mb-5 font-light text-gray-500 sm:text-xl text-left">
+          Our two repeater sites are linked together to provide coverage.<br />
+          <br /> The sites are:
+        </p>
+        <ul class="list-['-_'] list-inside text-left indent-6">
+          <li>Lower Squaw Butte (Emmett and Meridian)</li>
+          <li>Hatt Butte (South Nampa)</li>
+        </ul>
+        <div class="mt-10 w-full inline-flex">
+          <a
+            href="http://kg7kmv.net:3000/public-dashboards/1803afa8ca904a2da4dbe8c5529ef888"
+            target="_blank"
+            class="px-8 py-5 mx-auto bg-dark hover:bg-gray rounded-2xl text-center text-white hover:text-black text-xl font-normal leading-7"
+          >
+            View Dashboard
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-span-3">
+      <Section id="goals">
+        <Card>
+          <div
+            class="flex bg-[#F3F3F3] rounded-[45px] p-[60px] relative mt-[123px] mb-20"
+          >
+            <div class="w-full min-w-[460px]">
+              <h2 class="text-3xl font-medium mb-5">Project Goals</h2>
+              <p class="font-medium">
+                We’re excited to collaborate with other clubs or individuals to
+                help build out wide-area AREDN sites that could cover the entire
+                Treasure Valley.
+              </p>
+              <p>
+                Potential use cases include supporting events, enabling large
+                file transfers, video streaming, and even telephone services <br
+                />—all without relying on the internet.
+              </p>
+            </div>
+          </div>
+        </Card>
+      </Section>
+      <div
+        class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-3 col-span-3"
+      >
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            Getting Connected
+          </h2>
+          <p class="mb-5 font-light text-gray-500 sm:text-xl text-justify">
+            If you have line-of-sight (LoS) to one of our AREDN nodes, there’s a
+            good chance you can connect! Below is a recommended starter setup.
+            Both devices will need to be flashed with AREDN’s custom
+            OpenWRT-based firmware—<a
+              class="underline decoration-cyan text-blue hover:text-dark hover:decoration-gray visited:decoration-dark visited:text-dark"
+              href="https://docs.google.com/document/d/1Pdj_fZ5JjbNt5ItUjzLjbCiIrBhjRSdEOgetiuTMzNQ/edit?usp=sharing"
+              target="_blank">installation instructions are available here</a
+            >
+            or <a
+              class="underline decoration-cyan text-blue hover:text-dark hover:decoration-gray visited:decoration-dark visited:text-dark"
+              href="https://docs.arednmesh.org/en/latest/arednGettingStarted/installing_firmware.html#mikrotik-first-install-process"
+              aria-label="AREDN Offical Documentation - Instructions"
+              target="_blank">here</a
+            >.
+            <br /><br />
+            Even without LoS or RF coverage, you can still participate via built-in
+            VPN tunneling support—<a
+              class="underline decoration-cyan text-blue hover:text-dark hover:decoration-gray visited:decoration-dark visited:text-dark"
+              href="https://docs.google.com/document/d/17YDrPG5EYTGNLYnFce35S5UJyIuxs_cFO96mTBea4S4/edit?usp=sharing"
+              target="_blank">setup instructions are available here.</a
+            >
+            <br /><br />
+            You’ll also need an outdoor-rated, shielded Ethernet cable to connect
+            the indoor hAP device to the outdoor-mounted SXTsq5. Feel free to contact
+            the club if you need help getting started!
+          </p>
+        </div>
+        <div
+          class="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0"
+        >
+          <Card isUnderline={true}>
+            <div class="p-6">
+              <h3 class="font-semibold">
+                MikroTik SXTsq5 <a
+                  href="https://www.amazon.com/dp/B078T5ZPVK"
+                  target="_blank"
+                  class="float-right text-black hover:text-white bg-cyan hover:bg-dark focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex"
+                  >Amazon Link</a
+                >
+              </h3>
+              <p class="font-light">
+                A compact, high-performance outdoor radio:
+              </p>
+              <ul class="list-disc list-inside indent-6">
+                <li>MIMO 2x2 with 16 dBi gain</li>
+                <li>23° beamwidth</li>
+                <li>Up to 41 dBm ERP</li>
+                <li>Powered via 12–24V passive PoE</li>
+              </ul>
+            </div>
+          </Card>
+          <Card isUnderline={true}>
+            <div class="p-6">
+              <h3 class="font-semibold">
+                MikroTik hAP lite <a
+                  href="https://www.amazon.com/MikroTik-Dual-concurrent-Access-Point-RB952Ui-5ac2nD-US/dp/B019PCF3QY/ref=sr_1_4"
+                  target="_blank"
+                  class="float-right text-black hover:text-white bg-cyan hover:bg-dark focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex"
+                  >Amazon Link</a
+                >
+              </h3>
+              <p>An indoor Wi-Fi access point with mesh connectivity:</p>
+              <ul class="list-disc list-inside indent-6">
+                <li>Provides standard Wi-Fi access to your devices</li>
+                <li>
+                  Orange port supplies 12–24V passive PoE to power the SXTsq5
+                </li>
+                <li>
+                  WAN port bridges your home internet with the mesh network
+                </li>
+              </ul>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </main></MainLayout
+>

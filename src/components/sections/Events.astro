@@ -1,0 +1,86 @@
+---
+import SectionTitle from "../ui/SectionTitle.astro";
+import ServiceCard from "../ui/ServiceCard.astro";
+import Section from "./Section.astro";
+
+import c1 from "@assets/pics/card-pic1.png";
+import c2 from "@assets/pics/card-pic2.png";
+import c3 from "@assets/pics/card-pic3.png";
+import c4 from "@assets/pics/card-pic4.png";
+import c5 from "@assets/pics/card-pic5.png";
+import c6 from "@assets/pics/card-pic6.png";
+
+const cards = [
+  {
+    index: 1,
+    titleTop: "Monthly",
+    titleBottom: "Educational Meeting",
+    img: c1,
+    alt: "South West Idaho Amateur Radio Club Monthly Meeting",
+    link: "/articles/2025/2025-08-11-monthly-club-meeting",
+  },
+  {
+    index: 2,
+    titleTop: "Monthly",
+    titleBottom: "Kids Net",
+    img: c2,
+    alt: "South West Idaho Amateur Radio Club Monthly Kids Net",
+    link: "/articles/2025/2025-08-11-monthly-kids-net",
+  },
+  {
+    index: 3,
+    titleTop: "ARRL & Winter",
+    titleBottom: "Field Day",
+    img: c3,
+    alt: "Field Day",
+    link: "/articles/2025/2025-08-11-field-day",
+  },
+  {
+    index: 1,
+    titleTop: "Idaho",
+    titleBottom: "QSO Party",
+    img: c4,
+    alt: "Idaho QSO Party",
+    link: "/articles/2025/2025-08-11-idaho-qso-party",
+  },
+  {
+    index: 2,
+    titleTop: "Parks On",
+    titleBottom: "The Air",
+    img: c5,
+    alt: "South West Idaho Amateur Radio Club Parks On The Air (POTA)",
+    link: "/articles/2025/2025-08-11-parks-on-the-air",
+  },
+  {
+    index: 3,
+    titleTop: "Monthly",
+    titleBottom: "Leadership Meeting",
+    img: c6,
+    alt: "South West Idaho Amateur Radio Club Monthly Leadersip Meeting",
+    link: "/articles/2025/2025-08-11-monthly-leadership-meeting",
+  },
+];
+---
+
+<Section id="events">
+  <div class="mt-[120px]">
+    <SectionTitle
+      sectionTitle="Events"
+      description="Check out what’s coming up! Event details are posted on our public Facebook group—no account needed to view."
+    />
+    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10 pb-2">
+      {
+        cards.map((card) => (
+          <ServiceCard
+            index={card.index}
+            titleTop={card.titleTop}
+            titleBottom={card.titleBottom}
+            img={card.img}
+            alt={card.alt}
+            link={card.link}
+          />
+        ))
+      }
+    </div>
+  </div>
+</Section>

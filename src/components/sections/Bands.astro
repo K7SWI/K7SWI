@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import Card from "../ui/Card.astro";
+import Section from "./Section.astro";
+
+import RepeaterImage from "@assets/pics/repeater.svg";
+---
+
+<Section>
+  <Card>
+    <div class="flex bg-[#F3F3F3] rounded-[45px] p-[60px] relative mt-[123px]">
+      <div class="w-full min-w-[460px] lg:w-[40%] flex flex-col gap-[26px]">
+        <h2 class="text-3xl font-medium">Get on the Air</h2>
+        <p>
+          Club members actively monitor a wide range of repeaters and calling
+          frequencies, including FM on 52.525, 146.520, 223.500, 446.000,
+          927.100, and 1294.500 MHz, along with activity on the 13cm and 6cm
+          bands. SSB frequencies like 50.125 and 144.200 MHz are also commonly
+          monitored. We support use of the less common bands—such as 1.25m,
+          33cm, and 23cm—to help keep them active and accessible.
+        </p>
+        <a href="/#repeater-info" class="btn-primary text-center"
+          >Connect to our Repeaters</a
+        >
+      </div>
+      <div class="hidden lg:flex ml-[60px] xl:ml-[140px]">
+        <Image
+          src={RepeaterImage}
+          alt="This is an illustration"
+          class="flex lg:w-auto"
+        />
+      </div>
+    </div>
+  </Card>
+</Section>

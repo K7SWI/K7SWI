@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import Section from "./Section.astro";
+
+import AREDNImage from "../../../public/AREDN-Logo.png";
+---
+
+<Section id="repeaters" style="bg-gray">
+  <div
+    class="relative flex flex-col-reverse items-center md:flex-row"
+    id="hero"
+  >
+    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-20">
+      <div class="text-left space-y-3">
+        <h1
+          class="text-4xl font-medium leading-none md:text-6xl text-center md:text-left"
+        >
+          Southwest Idaho <br /> Amateur Radio Club <br />
+          <i class="font-bold">AREDN Network</i>
+        </h1>
+        <p
+          class="mt-6 mb-8 text-lg font-normal leading-7 sm:mb-12 text-center md:text-left md:pr-12"
+        >
+          AREDN (Amateur Radio Emergency Data Network) is a high-speed mesh
+          network designed to support emergency communications and digital
+          services.
+        </p>
+      </div>
+    </div>
+    <div class="flex items-center py-5 md:w-5/12 md:pb-20 md:pt-10">
+      <Image
+        src={AREDNImage}
+        alt="AREDN Logo"
+        class="mx-auto"
+        loading="eager"
+        width="250"
+      />
+    </div>
+  </div>
+</Section>

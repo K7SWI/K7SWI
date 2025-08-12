@@ -1,0 +1,19 @@
+---
+title: "Field Day 2023"
+pubDate: 2023-06-17
+author: "Kim Gross"
+authImage: "/_image?href=%2F%40fs%2Fhome%2Flocke%2FDocuments%2Fgit%2FK7SWI%2Fsrc%2Fassets%2Fteam%2FKI03.png%3ForigWidth%3D447%26origHeight%3D411%26origFormat%3Dpng&w=447&h=411&f=webp"
+image:
+  src: ""
+tags: ["club", "events"]
+summary: "Field Day at Tripod Meadows"
+type: "Article"
+---
+
+We will be camping and operating from the area of Tripod Meadows just outside of Smiths Ferry Idaho for Field day. Take Hwy 55 to Smith's Ferry, go West on Forest Service Road NF-644 until you meet Forest Service Road 626BA we will be a few hundred Yards off of NF644 in the area of NF626BA. You should be able to see signs and antennas.
+
+Potluck dinner on Saturday night, we will provide Dogs and Burgers
+
+Lots of room to camp. There will be a Get on the air station, VHF+ Stations and HF stations. Should be lots of fun.
+
+https://www.google.com/maps/dir/332+West+Dewey+Avenue,+Nampa,+ID+83686-6638,+USA/44.3001677,-116.1207299/@43.9794735,-116.6809547,9z/am=t/data=!4m9!4m8!1m5!1m1!1s0x54ae4bf695bf288f:0x68feb8b6742be76d!2m2!1d-116.5774711!2d43.5637094!1m0!3e0?entry=ttu

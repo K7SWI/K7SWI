@@ -1,0 +1,144 @@
+---
+import AccordionItem from "../ui/AccordionItem.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+import Section from "./Section.astro";
+---
+
+<Section id="repeater-info">
+  <div class="mt-[120px] mb-[120px]">
+    <SectionTitle
+      sectionTitle="Our Repeaters"
+      description="Our AREDN network supports local monitoring and data collection, compiled on a server hosted by KG7KMV."
+    />
+    <AccordionItem index={1} title="Lower Squaw Butte">
+      <div class="grid lg:grid-cols-2">
+        <div class="mb-4 mt-1 max-w-full pt-5 pb-[60px] transition-[height]">
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6 -rotate-90"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.75 6.75a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-.037c.856-.174 1.5-.93 1.5-1.838v-2.25c0-.907-.644-1.664-1.5-1.837V9.75a3 3 0 0 0-3-3h-15Zm15 1.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5h15ZM4.5 9.75a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75H18a.75.75 0 0 0 .75-.75v-4.5a.75.75 0 0 0-.75-.75H4.5Z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <h3 class="font-semibold text-lg mb-1 ml-2">Power System</h3>
+          </div>
+          <ul class="list-disc list-inside indent-8">
+            <li>640W solar array</li>
+            <li>320Ah LiFePO₄ battery with insulation and heater</li>
+          </ul>
+
+          <div class="flex items-center mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.348 14.652a3.75 3.75 0 0 1 0-5.304m5.304 0a3.75 3.75 0 0 1 0 5.304m-7.425 2.121a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              ></path>
+            </svg>
+            <h3 class="font-semibold text-lg mb-1 ml-2">
+              Repeaters & Services
+            </h3>
+          </div>
+          <ul class="list-disc list-inside indent-8">
+            <li>
+              <strong>AREDN:</strong> Coverage for Emmett with 40-mile link to Hat
+              Butte
+            </li>
+            <li>
+              <strong>1.25m FM:</strong> 224.94 MHz, PL 100.0 Hz, +1.6 MHz offset
+            </li>
+            <li>
+              <strong>2m FM:</strong> 146.740 MHz, PL 100.0 Hz, −0.6 MHz offset
+            </li>
+            <li>
+              <strong>70cm FM:</strong> 444.375 MHz, PL 100.0 Hz, +5 MHz offset
+            </li>
+            <li><strong>APRS Digipeater:</strong> GEM (N7UBO)</li>
+            <li><strong>GMRS:</strong> 462.700 MHz, PL 250.3 Hz (TX/RX)</li>
+          </ul>
+        </div>
+        <div class="py-5 mx-auto">
+          <iframe
+            width="425"
+            height="350"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-117.34085083007814%2C43.15009591190287%2C-115.52810668945314%2C44.055024757735985&layer=cyclosm&marker=43.9760471%2C-116.4074418"
+            style="border: 1px solid black"></iframe>
+        </div>
+      </div>
+    </AccordionItem>
+
+    <AccordionItem index={2} title="Hat Butte">
+      <div class="grid lg:grid-cols-2">
+        <div class="mb-4 mt-1 max-w-full pt-5 pb-[60px] transition-[height]">
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6 -rotate-90"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.75 6.75a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-.037c.856-.174 1.5-.93 1.5-1.838v-2.25c0-.907-.644-1.664-1.5-1.837V9.75a3 3 0 0 0-3-3h-15Zm15 1.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5h15ZM4.5 9.75a.75.75 0 0 0-.75.75V15c0 .414.336.75.75.75H18a.75.75 0 0 0 .75-.75v-4.5a.75.75 0 0 0-.75-.75H4.5Z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <h3 class="font-semibold text-lg mb-1 ml-2">Power System</h3>
+          </div>
+          <ul class="list-disc list-inside indent-8">
+            <li>400W solar array</li>
+            <li>100Ah LiFePO₄ battery with heater</li>
+          </ul>
+
+          <div class="flex items-center mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.348 14.652a3.75 3.75 0 0 1 0-5.304m5.304 0a3.75 3.75 0 0 1 0 5.304m-7.425 2.121a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              ></path>
+            </svg>
+            <h3 class="font-semibold text-lg mb-1 ml-2">
+              Repeaters & Services
+            </h3>
+          </div>
+          <ul class="list-disc list-inside indent-8">
+            <li>
+              <strong>AREDN:</strong> Coverage for Nampa with 40-mile link to Lower
+              Squaw Butte
+            </li>
+            <li>
+              <strong>2m FM & Fusion:</strong> 146.920 MHz, PL 100.0 Hz, −0.6 MHz
+              offset
+            </li>
+          </ul>
+        </div>
+        <div class="py-5 mx-auto">
+          <iframe
+            width="425"
+            height="350"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-117.34085083007814%2C43.15009591190287%2C-115.52810668945314%2C44.055024757735985&layer=cyclosm&marker=43.411208%2C-116.590049"
+            style="border: 1px solid black"></iframe>
+        </div>
+      </div>
+    </AccordionItem>
+  </div>
+</Section>

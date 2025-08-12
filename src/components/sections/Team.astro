@@ -3,90 +3,83 @@ import SectionTitle from "../ui/SectionTitle.astro";
 import TeamCard from "../ui/TeamCard.astro";
 import Section from "./Section.astro";
 
-const description =
-  "Meet the skilled and experienced team behind our successful digital marketing strategies";
-
 // Team images
-import p1 from "../../assets/team/t1.png";
-import p2 from "../../assets/team/t2.png";
-import p3 from "../../assets/team/t3.png";
-import p4 from "../../assets/team/t4.png";
-import p5 from "../../assets/team/t5.png";
-import p6 from "../../assets/team/t6.png";
+import p1 from "@assets/team/KI03.png";
+import p2 from "@assets/team/W2BJR.png";
+import p3 from "@assets/team/KD7RBX.png";
+import p4 from "@assets/team/AB7XX.png";
+import p5 from "@assets/team/KI7PWR.png";
+import p6 from "@assets/team/N7XH.png";
+import p7 from "@assets/team/KJ7NYE.png";
 
 const team = [
   {
     pic: p1,
-    name: "John Smith",
-    role: "CEO and Founder",
-    description:
-      "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
-    link: "https://linkedin.com",
+    name: "Kim Gross",
+    role: "President and Founder",
+    callsign: "KI03",
   },
   {
     pic: p2,
-    name: "Jane Doe",
-    role: "Director of Operations",
-    description:
-      "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
-    link: "https://linkedin.com",
+    name: "Brian Roberts",
+    role: "Vice President",
+    callsign: "W2BJR",
   },
   {
     pic: p3,
-    name: "Michael Brown",
-    role: "Senior SEO Specialist",
-    description:
-      "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
-    link: "https://linkedin.com",
+    name: "Hoot Gibson",
+    role: "Director",
+    callsign: "KD7RBX",
   },
   {
     pic: p4,
-    name: "Emily Johnson",
-    role: "PPC Manager",
-    description:
-      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
-    link: "https://linkedin.com",
+    name: "Alan Blackmon",
+    role: "Director",
+    callsign: "AB7XX",
   },
   {
     pic: p5,
-    name: "Brian Williams",
-    role: "Social Media Specialist",
-    description:
-      "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
-    link: "https://linkedin.com",
+    name: "Elaine Gross",
+    role: "Director",
+    callsign: "KI7PWR",
   },
   {
     pic: p6,
-    name: "Sarah Kim",
-    role: "Content Creator",
-    description:
-      "2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries",
-    link: "https://linkedin.com",
+    name: "Michael Leister",
+    role: "Director",
+    callsign: "N7XH",
+  },
+  {
+    pic: p7,
+    name: "Steven Hanson",
+    role: "Secretary",
+    callsign: "KJ7NYE",
   },
 ];
 ---
 
 <Section id="about">
-  <div class="mt-[140px]">
-    <SectionTitle sectionTitle="Team" description={description} />
+  <div class="mt-[120px] mb-20">
+    <SectionTitle
+      sectionTitle="Team"
+      description="Meet the dedicated officers keeping our club active and on the air."
+    />
     <div
       class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10"
     >
       {
         team.map((member, index) => (
-          <TeamCard
-            key={index}
-            pic={member.pic}
-            name={member.name}
-            role={member.role}
-            description={member.description}
-            link={member.link}
-          />
+          <div class="xl:last:col-start-2">
+            <TeamCard
+              key={index}
+              pic={member.pic}
+              name={member.name}
+              role={member.role}
+              callsign={member.callsign}
+            />
+          </div>
         ))
       }
-    </div>
-    <div class="flex justify-end mt-10">
-      <button class="btn-primary">See all team</button>
     </div>
   </div>
 </Section>
