@@ -19,7 +19,7 @@ const allBlogArticles: CollectionEntry<"blog">[] = (
 );
 
 const tagArticles = allBlogArticles.filter((article) =>
-  article.data.tags.includes(tag),
+  article.data.tags.includes(tag as any),
 );
 ---
 
