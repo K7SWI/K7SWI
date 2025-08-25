@@ -5,7 +5,7 @@ import SearchForm from "../../components/ui/SearchForm.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
-const query: string | null = Astro.url.searchParams.get("query");
+const query: string = Astro.url.searchParams.get("query") ?? "";
 
 const allBlogArticles: CollectionEntry<"blog">[] = await getCollection("blog");
 
@@ -13,15 +13,15 @@ const allBlogArticles: CollectionEntry<"blog">[] = await getCollection("blog");
 const searchResults = allBlogArticles.filter((article) => {
   const titleMatch: boolean = article.data.title
     .toLowerCase()
-    .includes(query!.toLowerCase());
+    .includes(query.toLowerCase());
 
   const bodyMatch: boolean = article.body
     ?.toLowerCase()
-    .includes(query!.toLowerCase()) ?? false;
+    .includes(query.toLowerCase()) ?? false;
 
   const slugMatch: boolean = article.id
     .toLowerCase()
-    .includes(query!.toLowerCase());
+    .includes(query.toLowerCase());
 
   return titleMatch || bodyMatch || slugMatch;
 });

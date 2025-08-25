@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://k7swi.org",
   integrations: [tailwind()],
-  output: "server",
+  output: "static",
 });

@@ -1,7 +1,7 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
 import Tags from "../../components/ui/Tags.astro";
-import { getEntry, render } from "astro:content";
+import { getCollection, getEntry, render, type CollectionEntry } from "astro:content";
 import { formatDate } from "../../utils";
 
 import "../../styles/global.css";
@@ -25,6 +25,12 @@ if (entry.data.image.src !== "") {
 }
 
 const { Content } = await render(entry);
+
+export async function getStaticPaths() {
+  const allBlogArticles: CollectionEntry<"blog">[] = await getCollection("blog");
+
+  return allBlogArticles.map((x) => ({ params: { slug: x.id }}));
+}
 ---
 
 <MainLayout title={entry.data.title}>

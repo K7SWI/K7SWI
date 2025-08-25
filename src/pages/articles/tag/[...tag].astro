@@ -21,6 +21,21 @@ const allBlogArticles: CollectionEntry<"blog">[] = (
 const tagArticles = allBlogArticles.filter((article) =>
   article.data.tags.includes(tag as any),
 );
+
+export function getStaticPaths() {
+  return ["antennas",
+    "announcements",
+    "classes",
+    "club",
+    "contests",
+    "build",
+    "events",
+    "ham radio",
+    "members",
+    "pota",
+    "presentation",
+    "vhf"].map((x) => ({ params: { tag: x }})) // TODO: Make this tied to content.config.ts
+}
 ---
 
 <MainLayout title="Search Results">
