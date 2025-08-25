@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: node:lts
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -15,8 +15,5 @@ jobs:
         run: npm install
       - name: Build Project
         run: npm build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: html
-          path: dist/
+      - name: Deploy HTML
+        run: cp dist/ /var/www/html
