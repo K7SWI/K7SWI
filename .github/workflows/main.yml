@@ -20,4 +20,4 @@ jobs:
       - name: Build Project
         run: npm run build
       - name: Deploy HTML
-        run: mv -f dist/* /var/www/html
+        run: cp -rf dist/* /var/www/html
