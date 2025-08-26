@@ -6,7 +6,7 @@ import Section from "@/components/sections/Section.astro";
 <MainLayout title="calendar">
         <Section id="calendar">
             <div id="loadingMessage" class="mt-[200px] sm:min-w-[450px] md:min-w-[700px] lg:min-w-[900px] min-h-[900px]"><p class="font-normal text-lg text-center">Loading Calendar...</p></div>
-            <iframe id="hamclubonline" src="https://secure.hamclubonline.com/club/calendar.php?id=286" class="mx-auto my-10 sm:min-w-[450px] md:min-w-[700px] lg:min-w-[900px] min-h-[900px]" style="display: none"></iframe>
+            <iframe id="hamclubonline" src="https://secure.hamclubonline.com/club/calendar.php?id=286" class="mx-auto my-10 sm:min-w-[450px] md:min-w-[700px] lg:min-w-[900px] min-h-[900px]" style="visibility: hidden"></iframe>
         </Section>
 </MainLayout>
 
@@ -15,6 +15,6 @@ import Section from "@/components/sections/Section.astro";
     iframe?.addEventListener('load', function () {
         const loadingMessage = document.getElementById('loadingMessage');
         loadingMessage?.setAttribute("style", "display: none");
-        iframe?.setAttribute("style", "display: block");
+        iframe?.setAttribute("style", "visibility: visible");
     });
 </script>
