@@ -8,6 +8,7 @@
    version="1.1"
    id="svg1"
    sodipodi:docname="Logo.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -22,7 +23,16 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:document-units="mm">
+     inkscape:document-units="mm"
+     inkscape:zoom="2.0272475"
+     inkscape:cx="125.78632"
+     inkscape:cy="152.17678"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
     <inkscape:page
        x="0"
        y="0"
@@ -209,17 +219,11 @@
        inkscape:label="Antenna"
        d="m 105.09949,146.46205 a 2.0924203,2.0924201 0 0 0 -2.13625,2.00071 2.0924203,2.0924201 0 0 0 1.74093,2.15422 l 2.37447,7.86578 h 2.20864 l -3.18461,-8.11837 a 2.0924203,2.0924201 0 0 0 1.03552,-1.62798 l 0.008,-0.18226 a 2.0924203,2.0924201 0 0 0 -2.0464,-2.0921 z"
        transform="matrix(1.0065567,0,0,1.0065567,-0.74280996,-1.0219929)" />
-    <text
-       xml:space="preserve"
-       style="font-weight:bold;font-size:19.7556px;line-height:1.9;font-family:'Space Grotesk';-inkscape-font-specification:'Space Grotesk Bold';text-align:center;letter-spacing:0.79375px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:url(#linearGradient3);fill-opacity:1;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:1.4, 0.7, 0.7, 0.7, 1.4, 1.4, 1.4, 0.7, 1.4, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 1.4, 0.7, 0.7, 0.7, 0.7, 0.7, 1.4, 0.7, 0.7, 1.4, 0.7, 1.4, 1.4, 0.7, 0.7, 0.7, 4.2"
-       x="147.52458"
-       y="155.41447"
+    <path
+       d="m 118.12118,155.41447 v -13.82892 h 2.60774 v 5.49206 h 0.3556 l 4.48452,-5.49206 h 3.3387 l -5.76864,6.81569 5.96619,7.01323 h -3.43747 l -4.5833,-5.61059 h -0.3556 v 5.61059 z m 14.44486,0 v -0.51364 q 0,-0.77047 0.11853,-1.30387 0.11853,-0.55316 0.51365,-1.2446 l 4.64256,-8.19858 v -0.31609 h -7.34908 v -2.25214 h 9.95682 v 3.00286 l -4.89939,8.75173 q -0.25682,0.45438 -0.3556,0.80998 -0.0988,0.3556 -0.0988,0.86924 v 0.39511 z m 15.25486,0.27658 q -1.6002,0 -2.82505,-0.57291 -1.22484,-0.57291 -1.91629,-1.63971 -0.69145,-1.06681 -0.69145,-2.56823 v -0.55316 h 2.56823 v 0.55316 q 0,1.2446 0.77047,1.87678 0.77047,0.61242 2.09409,0.61242 1.34338,0 1.99532,-0.5334 0.67169,-0.5334 0.67169,-1.36313 0,-0.57292 -0.33585,-0.92852 -0.31608,-0.3556 -0.94826,-0.57291 -0.61243,-0.23707 -1.50143,-0.43462 l -0.45438,-0.0988 q -1.4224,-0.31609 -2.44969,-0.79023 -1.00754,-0.49389 -1.5607,-1.28411 -0.5334,-0.79022 -0.5334,-2.05458 0,-1.26436 0.59267,-2.15336 0.61243,-0.90876 1.69898,-1.38289 1.10632,-0.49389 2.58799,-0.49389 1.48167,0 2.62749,0.51364 1.16558,0.49389 1.81752,1.50143 0.67169,0.98778 0.67169,2.4892 v 0.59267 h -2.56823 v -0.59267 q 0,-0.79022 -0.31609,-1.26436 -0.29633,-0.49389 -0.86925,-0.7112 -0.57291,-0.23706 -1.36313,-0.23706 -1.18534,0 -1.75825,0.45437 -0.55316,0.43463 -0.55316,1.2051 0,0.51364 0.25682,0.86924 0.27658,0.3556 0.80998,0.59267 0.53341,0.23707 1.36314,0.41487 l 0.45438,0.0988 q 1.48167,0.31609 2.56823,0.80998 1.10631,0.49389 1.71873,1.30387 0.61243,0.80997 0.61243,2.07433 0,1.26436 -0.65194,2.23239 -0.63218,0.94826 -1.81751,1.50142 -1.16558,0.5334 -2.76579,0.5334 z m 9.07137,-0.27658 -1.81752,-13.82892 h 2.58799 l 1.34338,12.01141 h 0.3556 l 1.73849,-12.01141 h 4.50428 l 1.73849,12.01141 h 0.3556 l 1.34338,-12.01141 h 2.58799 l -1.81752,13.82892 h -4.50428 l -1.778,-12.28798 h -0.3556 l -1.778,12.28798 z m 17.42798,0 v -13.82892 h 2.60774 v 13.82892 z"
        id="text10"
-       inkscape:label="K7SWI"><tspan
-         sodipodi:role="line"
-         id="tspan10"
-         style="font-size:19.7556px;fill:url(#linearGradient3);stroke-width:0.4"
-         x="147.92146"
-         y="155.41447">K7SWI</tspan></text>
+       style="font-weight:bold;font-size:19.7556px;line-height:1.9;font-family:'Space Grotesk';-inkscape-font-specification:'Space Grotesk Bold';text-align:center;letter-spacing:0.79375px;word-spacing:0px;text-anchor:middle;fill:url(#linearGradient3);stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:1.4, 0.7, 0.7, 0.7, 1.4, 1.4, 1.4, 0.7, 1.4, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 1.4, 0.7, 0.7, 0.7, 0.7, 0.7, 1.4, 0.7, 0.7, 1.4, 0.7, 1.4, 1.4, 0.7, 0.7, 0.7, 4.2"
+       inkscape:label="K7SWI"
+       aria-label="K7SWI" />
   </g>
 </svg>
