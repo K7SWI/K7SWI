@@ -1,0 +1,96 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import Section from "@/components/sections/Section.astro";
+import Card from "@/components/ui/Card.astro";
+---
+
+<MainLayout title="APRS">
+  <main class="space-y-10">
+    <div class="py-4 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-3">
+      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <h1 class="text-5xl font-medium leading-none md:text-6xl mb-6">APRS</h1>
+        <p class="mb-5 font-light text-gray-500 sm:text-xl text-justify">
+          The Automatic Packet Reporting System (APRS) lets hams share live
+          position, weather, and status data over radio. Our club supports two
+          flavors of APRS in the Treasure Valley: traditional 2m packet APRS,
+          and an experimental 433.775MHz LoRa APRS network built around low-cost
+          LoRa hardware.
+        </p>
+      </div>
+    </div>
+    <Section id="2m-aprs">
+      <Card isUnderline={true}>
+        <div class="p-6">
+          <h2 class="text-3xl font-medium mb-5">
+            2m APRS in the Treasure Valley
+          </h2>
+          <p class="font-light text-gray-500 sm:text-lg text-justify mb-5">
+            2m (144.390 MHz nationwide APRS frequency) is the traditional home
+            for APRS in the United States, and coverage across the Treasure
+            Valley is solid thanks to a network of digipeaters and iGates run by
+            local hams. Any radio capable of transmitting packet on 2m—paired
+            with a TNC or a sound-card modem—can participate.
+            <br /><br />
+            The club maintains a 2m digipeater/iGate at our repeater site on Squaw
+            Butte in Emmett, providing coverage from Ontario through the Treasure
+            Valley.
+            <br /><br />
+            Stations in the valley are digipeated and gated to APRS-IS, so positions
+            and messages show up on
+            <a
+              class="underline decoration-cyan text-blue hover:text-dark hover:decoration-gray visited:decoration-dark visited:text-dark"
+              href="https://aprs.fi"
+              target="_blank">aprs.fi</a
+            >
+            alongside the rest of the nationwide network.
+          </p>
+          <ul
+            class="list-['-_'] list-inside text-left indent-6 font-light text-gray-500 sm:text-lg"
+          >
+            <li>Frequency: 144.390 MHz (national APRS calling frequency)</li>
+            <li>Standard AFSK 1200 baud packet</li>
+            <li>
+              Digipeater/iGate at Squaw Butte, Emmett—coverage from Ontario
+              through the Treasure Valley
+            </li>
+          </ul>
+        </div>
+      </Card>
+    </Section>
+    <Section id="lora-aprs">
+      <Card isUnderline={true}>
+        <div class="p-6">
+          <h2 class="text-3xl font-medium mb-5">433.775MHz LoRa APRS</h2>
+          <p class="font-light text-gray-500 sm:text-lg text-justify mb-5">
+            In addition to legacy 2m packet, we're building out a LoRa APRS
+            network on 433.775MHz. LoRa's long range and low power requirements
+            make it well suited for small, solar- or battery-powered trackers,
+            iGates, and digipeaters—complementing our 2m coverage with a
+            lightweight, low-cost alternative.
+            <br /><br />
+            The club also maintains a LoRa digipeater/iGate at our repeater site
+            on Squaw Butte in Emmett, alongside the 2m station, giving the same Ontario-through-Treasure-Valley
+            coverage on LoRa.
+            <br /><br />
+            LoRa APRS trackers and iGates are inexpensive to build, easy to deploy
+            in the field, and interoperate with the broader LoRa APRS community using
+            the same APRS-IS backend as 2m stations.
+          </p>
+          <ul
+            class="list-['-_'] list-inside text-left indent-6 font-light text-gray-500 sm:text-lg"
+          >
+            <li>Frequency: 433.775 MHz</li>
+            <li>Spreading Factor: SF8</li>
+            <li>Coding Rate: CR5</li>
+            <li>Bandwidth: 62.5 kHz</li>
+            <li>
+              Digipeater/iGate at Squaw Butte, Emmett—coverage from Ontario
+              through the Treasure Valley
+            </li>
+            <li>Gated to APRS-IS, viewable alongside 2m stations</li>
+          </ul>
+        </div>
+      </Card>
+    </Section>
+  </main>
+</MainLayout>
